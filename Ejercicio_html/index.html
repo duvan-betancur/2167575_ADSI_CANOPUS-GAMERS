@@ -1,54 +1,126 @@
-<html lang="en">
+<!doctype html>
+<html lang="es">
+  <head>
+      <meta charset="utf-8">
+      <title>Canopus_Gamers</title>
+      <link href ='Imagenes/canopus-gamers.jpeg' rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="Imagenes/canopus-gamers.jpeg">
+      <link rel="stylesheet" href="CSS/Normalize.Css">
+      <link rel="stylesheet" href="CSS/style.Css">
+      
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Canopus-Gamers</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/app.js"></script>
 
-</head>
+  </head>
 
-<body>
-    <div class="grid-container">
-        <div class="Menu">
-            <ul>
-                <li>INICIO</li>
-                <li>JUEGOS</li>
-                <li>CONTACTO</li>
-                <li>NOSOTROS</li>
-            </ul>
+  <body>
+    <div class="home-wrapper">
+     <header class="container">
+     <div class="container">
+        
+        <nav>
+          <h1>Canopus-Gamers</h1>
+          <a href="https://www.google.com/?hl=es" class="link">INICIO</a>
+          <a href="https://www.google.com/?hl=es" class="link">JUEGOS</a>
+          <a href="#contacto" class="link">CONTACTO</a>
+          <a href="#NOSOTROS" class="link">NOSOTROS</a>
+          <a href="https://www.google.com/?hl=es" class="link">INICIAR SESIÒN</a>
+         
+          
+      </nav>
+     
+    </header>
+
+  <section id="INICIAR SESION">
+    
+    <h2>INICIAR SESION</h2>
+    <form>
+      <div><input type="text" placeholder="Nombre"></div><br>
+      <div><input type="text" placeholder="Apellido"></textarea></div><br>
+      <div><input type="text" placeholder="Correo electronico"></textarea></div><br>
+      <div><input type="text" placeholder="Contraseña nueva"></textarea></div><br>
+      <h1>Fecha De Nacimiento</h1>
+          
+         <button>Dia</button>
+      <select>
+           <option value="1"></option>
+      </select>
+         <button>Mes</button>
+     <select>
+            <option value="enero"></option>
+      </select>
+         <button>Año</button>
+     <select>
+           <option value="2020"></option>
+     </select>
+          
+            <h1>Sexo</h1>
+     <label for="Hombre">Hombre</label><input type="radio" name="Hombre" id="Hombre" value="Hombre" />
+     <label for="Mujer">Mujer</label><input type="radio" name="Mujer" id="Mujer" value="Mujer" />
+     <label for="Otros">Personalizado</label><input type="radio" name="Personalizado" id="Personalizado" value="Personalizado" /><br><br>
+          <button>Registrarme</button> <a class="link" href="loginvista.html"> </a>
+      
+    </form>
+   </section>  
+
+    <section id="juegos" class="container">
+      <h2>JUEGOS</h2>
+      
+      <div class="box">
+        <img src="Imagenes/juego.jpg">
+        <BUtton>Descargar</BUtton>
+      </div>
+
+      <div class="box">
+          <img src="Imagenes/juego-gamers.jpg" alt="">
+          <BUtton>Descargar</BUtton>
+     </div>
+
+     <div class="box">
+           <img src="Imagenes/halo.jpg" alt="">
+           <BUtton>Descargar</BUtton>
+
+      <div class="box">
+            <img src="Imagenes/juego3.jpg" alt="">
+            <BUtton>Descargar</BUtton>
+       </div>
+
+    </section>
+ 
+    <section id="video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/nMZOz09zKnY?start=2" title="YouTube video player" 
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     
+    </section>
+
+    <section id="Nosotros">
+    <div class="container">
+      <h2>NOSOTROS</h2>
+      <div class="box">
+        <p>Nosotros somos una empresa donde te brindamos con mucha màs facilidad la busqueda y descarga de tus juegos preferidos.
+          llevamos màs de 5 años brindando buen contenido para nuestros usuarios puedan tener una mejor experiencia en el mundo de los 
+          videojuegos.
+        </p>
+      </div>
+
+        
+    </section>
+
+      <section id="contacto">
+       <h2>CONTACTO</h2>
+       <form>
+         <div><input type="text" placeholder="tu email"></div>
+         <div><textarea rows="10" placeholder="tu mensaje"></textarea></div>
+         <button>ENVIAR</button> <a href="Enviarvista.html" class="link"></a>
+       </form>
+      </section>
+   <footer>
+        <div>
+          <p>2021 <strong>Canopus-Gamers</strong>, Todos los Derechos Reservados</p>
         </div>
-        <div class="Contenido">
-            <div class="imagen">
-                <img src="Imagenes/Canopus.jpg" alt="Canopus-Gamers" width="26%" height="30%">
-
-            </div>
-
-            <div class="Formulario">
-                <h1>Registrarse</h1>
-                <form action="/action_page.php">
-                    <label for="fname">Nombre:</label><br>
-                    <input type="text" id="fname" name="fname" value="John"><br>
-                    <label for="lname">Apellido:</label><br>
-                    <input type="text" id="lname" name="lname" value="Doe"><br><br>
-                    <label for="lname">Correo</label><br>
-                    <input type="email" id="lname" name="lname" value="Doe"><br><br>
-                    <label for="lname">Fecha de nacimiento</label><br>
-                    <input type="date" id="lname" name="lname" value="Doe"><br><br>
-
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
-        </div>
-        <div class="footer">
-            <h4>Redes sociales</h4>
-            <a href="https://www.facebook.com/" target="_blank">
-                <img src="img/fb_icon_325x325.png" width="4%" height="2%">Facebook
-
-                <a href="https://www.facebook.com/" target="_blank">
-                    <img src="img/fb_icon_325x325.png" width="4%" height="2%">Instagram
-        </div>
-
-    </div>
-</body>
+      </footer>
+  </body>
+</html>
 
 </html>
